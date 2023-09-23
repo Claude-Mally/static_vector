@@ -11,28 +11,28 @@ This is what I asked ChatGPT
 * Regenerate with snake_case template name, like in the standard library
 
 
-# compilation of a simple example
-g++ main.cpp -std=c++17 -Wall -pedantic -Wextra -Wfatal-errors -Wconversion -Wshadow -Wunreachable-code -O2 -o test.out
+## compilation of a simple example
+    g++ main.cpp -std=c++17 -Wall -pedantic -Wextra -Wfatal-errors -Wconversion -Wshadow -Wunreachable-code -O2 -o test.out
 
-# execution
-./test
+## execution
+    ./test.out
 
 #output
 4 5 
 
 
-# Installing google test (linux Ubuntu)
-sudo apt update
-sudo apt upgrade
-sudo apt install libgtest-dev
-cd /usr/src/googletest/googletest
-sudo cmake CMakeLists.txt
-sudo make
-sudo cp lib/*.a /usr/lib
+## Installing google test (linux Ubuntu)
+    sudo apt update
+    sudo apt upgrade
+    sudo apt install libgtest-dev
+    cd /usr/src/googletest/googletest
+    sudo cmake CMakeLists.txt
+    sudo make
+    sudo cp lib/*.a /usr/lib
 
-# compilation of a unit test
-g++ unitTest.cpp -std=c++17 -Wall -pedantic -Wextra -Wfatal-errors -Wconversion -Wshadow -Wunreachable-code -lgtest -lgtest_main -O2 -o unitTest.out
+## compilation of unit test
+    g++ unitTest.cpp -std=c++17 -Wall -pedantic -Wextra -Wfatal-errors -Wconversion -Wshadow -Wunreachable-code -lgtest -lgtest_main -O2 -o unitTest.out
 
-# running unitTests
-./unitTest.out
+## running unitTests
+    ./unitTest.out
 
